@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+/* ------------------- Start navbar ----------------- */
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  width: 100%;
+  align-items: center;
+  padding: 15px 40px;
+  letter-spacing: 3px;
+  position: fixed;
+  top: 0;
+  z-index: 1;  
+}
+nav .logo {
+  font-size: 18px;
+}
+nav .logo h1 {
+  font-weight: 300;
+}
+nav .logo h1 span {
+  font-weight: 500;
+}
+nav .pages a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 30px;
+}
+nav .pages a:hover{
+  color: rgb(72, 91, 221);
+}
+nav .menu,nav .ico-menu{
+  display:none;
+}
+nav .menu .nav-menu  {
+  background-color: #e3e3e0;
+  padding: 70px 30px 30px 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+}
+nav .menu .nav-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+}
+nav .menu .nav-menu a:hover{
+  color: rgb(72, 91, 221);
+}
+/* ------------------- End navbar ----------------- */
+
+/* ------------------- start Home ----------------- */
+.home .image {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url('./Images/Hero-image-21.webp');
+}
+.home .content{
+  position: absolute;
+  top: 38%;
+  left: 0%;
+  width: 100%;
+  display: block;
+}
+.home .content p{
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto;
+}
+.home .content p span{
+  padding: 5px;
+  background-color: #575656c1;
+}
+/* ------------------- End Home ----------------- */
+
+.section {
+  max-width: 100vw;
+  margin-top: 40px;
+  padding: 0 40px;
+}
+.section h1 {
+  border-bottom: 3px solid gray;
+  padding-bottom: 10px;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* ------------------- strat pojects ---------------- */
+
+.section .project-contaier{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+.section .project-contaier .card{
+  background-color: #f6f6f6;
+  width: 49%;
+  position: relative;
+  height: max-content;
+  cursor: pointer;
+}
+.projects .project-contaier .card .view{
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all;
+  transition-duration: 1s;
+  background:linear-gradient(#e1dddd,#083db0c1) ;
+}
+.projects .project-contaier .card .view a{
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all;
+  transition-duration: 1s;
+}
+.projects .project-contaier .card img{
+  width: 100%;
+}
+.projects .project-contaier .card .view:hover {
+  opacity: 1; 
+}
+.projects .project-contaier .card .view:hover a {
+  top: 45%;
+  color: white;
+}
+.projects .project-contaier .card .view a:hover {
+  color: #000000;
+}
+.projects .project-contaier .card p{
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  color: white;
+  font-size: 12px;
+}
+/* ------------------- End pojects ---------------- */
+
+
+/* ------------------- strat About ---------------- */
+
+.about p{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.about .project-contaier .card .image{
+  width: 100%;
+  height: 50%;
+}
+.about .project-contaier .card .image img{
+  width: 100%;
+}
+.about .project-contaier .content{
+  padding: 10px;
+}
+.about .project-contaier .content h2{
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+.about .project-contaier .content h2{
+  letter-spacing: 2px;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.about .project-contaier .content h3{
+  color: darkgray;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.about .project-contaier .content input{
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d7d2d2c1;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ------------------- End About ---------------- */
+
+
+/* ------------------- start contact ---------------- */
+
+.contact form{
+  width: 100%;
+}
+.contact input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #575656c1;  
+}
+.contact textarea{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #575656c1;  
+}
+.contact .submit{
+  width: initial;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border: 0px;
+  border-radius: 10px;
+}
+/* ------------------- End contact ---------------- */
+
+/* ------------------- start footer ---------------- */
+
+.footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer span{
+  color: #ffff00;
+}
+
+/* ------------------- End footer ---------------- */
+
+/* ------------------- media ---------------- */
+
+@media screen and (max-width: 992px) 
+              and (min-width: 850px) 
+{
+  nav{
+    padding: 15px 20px;
+    letter-spacing: 2px;
+  }
+  nav .logo {
+    font-size: 14px;
+  }
+  nav .pages a{
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .home .content{
+    top: 42%;
+    left: 0%;
+  }
+  .home .content p{
+    font-size: 50px;
+  }
+  .projects .project-contaier .card p{
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) 
+              and (min-width: 666px) 
+{
+  .section .project-contaier{
+    row-gap: 10px;
+    column-gap: 10px;
+  }  
+  nav .pages a{
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+}
+@media screen and (max-width: 666px) 
+              and (min-width: 350px) 
+                , (max-width: 350px) 
+{
+
+  nav{
+    padding: 15px 20px;
+    letter-spacing: 2px;
+  }
+  nav .logo {
+    font-size: 14px;
+  }
+  nav .pages{
+    display: none;
+  }
+  
+  nav .menu{
+    display: inherit;
+  }
+  nav .menu .nav-menu{
+    opacity: 0;
+
+  }
+  nav .menu input{
+    display: inherit;
+    background-color: #c7b6b6;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    top: 13px;
+    right: 18px;
+  }
+  nav .menu input{
+    z-index: 3;
+  }
+  nav .ico-menu{
+    z-index: 2;
+  }
+
+  nav .menu input:checked ~ .nav-menu {
+      opacity: 1;
+  }
+
+  nav .ico-menu{
+    display: inherit;
+    font-size: 26px;
+  }
+  .home .content p{
+    font-size: 8vw;
+    background-color: #38313172;
+    padding: 5px;
+  }
+  .home .content p span{
+    background-color: #57565600;
+  }
+  .projects .project-contaier .card p{
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+  }
+  .section .project-contaier{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 15px;
+  }
+  .section .project-contaier .card{
+    background-color: #f6f6f6;
+    width: 100%;
+    position: relative;
+    height: max-content;
+  }
+  .about .project-contaier .content p{
+    text-align: start;
+  }
+}
+
+

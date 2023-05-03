@@ -1,0 +1,47 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  z-index: 4;
+  box-shadow: 3px 0px 10px 0.2px #00000026;
+}
+.container .navbar-brand span {
+  color: #ff5011;
+}
+
+.hero{
+  background: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-color: aqua;
+  height: calc(100vh - 62px);
+  background-size: 100% 100%;
+}
+.hero .content{
+  width: 80%;
+}
+.hero .content h1 span{
+  color: #ff5011;
+}
+.new div img{
+  height: 100%;
+}
+.featured h4 {
+  position: relative;
+}
+.featured h4::after {
+  content:  "";
+  display: block;
+  position: absolute;
+  left: 48%;
+  bottom: -20px;
+  width: 30px;
+  height: 3px;
+  background-color: #ff5011;
+}
+.banner{
+  width: 100%;
+  height: 400px;
+  background: url(/img/banner/2.jpg);
+}

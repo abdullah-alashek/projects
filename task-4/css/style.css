@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+body{
+  background-image: url(../images/background.png);
+}
+nav{
+  position: fixed;
+  top: 0px;
+  display: flex;
+  width: 100vw;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+nav .menu {
+  display: none;
+  position: relative;
+}
+nav .menu i{
+  font-size: 30px;
+}
+nav .menu .butt input{
+  width: 30px;
+  background-color: #FF8500;
+  height: 50px;
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+nav img{
+  width: 75px;
+  height: 20px;
+}
+nav .elements{
+  display: flex;
+}
+nav .elements .ele{
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}
+
+nav .elements ul{
+  display: flex;
+}
+nav .elements ul li{
+  margin-right: 32px;
+  list-style: none;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav .elements ul li i{
+  margin-left: 5px;
+  font-size: 18px;
+  color: #938C8C;
+}
+nav .elements ul li a{
+  text-decoration: none; 
+  color: #938C8C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+nav .elements ul li a.active{
+  color: #282828;
+  font-weight: 600;
+}
+nav .elements ul li a.active + i{
+  transform: rotate(180deg);
+  color: #000;
+}
+nav .elements .ele .Register ul li a{
+  font-weight: 400;
+  color: #282828;
+}
+nav .elements .ele .Register ul .login{
+  font-weight: 700;
+}
+nav .elements .lang a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #FF8500;
+}
+nav .elements .lang a:first-child{
+  color: #C5BCB3;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+.box {
+  margin-top: 48px;
+  position: absolute;
+  top: -15px;
+  left: -100px;
+  display: none;
+}
+.box .mark{
+  position: absolute;
+  top: -15px;
+  left: 105px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #282828;
+}
+.box ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 64px;
+  background-color: #282828;
+  width: fit-content;
+  margin: 0 auto;
+  width: 578px;
+  padding: 12px 0px;
+  border-radius: 8px;
+
+}
+.box ul li a{
+  font-size: 16px;
+  font-weight: 500;
+  color: #938C8C;
+  text-decoration: none;
+}
+.box ul li a:hover{
+  color: rgb(255, 132, 0);
+  border-bottom: 1px solid #FF8500;
+} 
+.elements  ul li .box ul li a.active{
+  color: rgb(255, 132, 0);
+  border-bottom: 1px solid #FF8500;
+} 
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------- */
+.search-job , .search-employee , .companies {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.search-job .title , .search-employee .title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+.search-job p , .search-employee p{
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin: 18px;
+  line-height: 24px;
+}
+.search-job .button , .search-employee .button{
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0px auto;
+  padding: 8px 32px;
+  background-color: #282828;
+  border-radius: 4px;
+}
+.search-job .search-container , .search-employee .search-container{
+  margin: 0px auto;
+  margin-top: 20px;
+  padding-top: 35px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+.search-job .search-container input , .search-employee .search-container input{
+  border: none;
+  background:inherit;
+  font-size: 16px;
+  font-weight: 400;
+  color: #938C8C;
+  outline: none;
+  width: 80%;
+}
+.search-job .search-container .butt button, .search-employee .search-container .butt button{
+  border: none;
+  margin: 0px 5px;
+  cursor: pointer;  
+}
+.search-job .categories , .search-employee .categories{
+  margin: 36px auto;
+  z-index: -1;
+}  
+.search-job .categories ul, .search-employee .categories ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  position: relative;
+
+}  
+.search-job .categories ul li a ,.search-employee .categories ul li a{
+  color: #938C8C;
+  text-decoration: none;
+  position: relative;
+}  
+
+.search-job .categories ul li a:hover ,.search-employee .categories ul li a:hover{
+  color: #000;
+}
+.search-job .categories ul li a:hover:after ,.search-employee .categories ul li a:hover:after{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color:#FF8500;
+  border-radius: 1px;
+}  
+.search-job .categories ul li a.active ,.search-employee .categories ul li a.active{
+  color: #000;
+}  
+.search-job .categories ul li a.active:after ,.search-employee .categories ul li a.active:after{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color:#FF8500;
+  border-radius: 1px;
+}  
+.search-job .cards, .search-employee .cards{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 105px;
+}  
+.search-job .cards .card , .search-employee .cards .card{
+  width: 305px;
+  height: max-content;
+  box-shadow: 0px 4px 20px #28282826;
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 18px 32px;
+}  
+.search-job .cards .card .title, .search-employee .cards .card .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}  
+.search-job .cards .card .title .img , .search-employee .cards .card .title .img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:8px;
+}  
+.search-job .cards .card .title .img p, .search-employee .cards .card .title .img p{
+  font-size: 10px;
+  font-weight: 500;
+  color: #282828;
+}  
+.search-job .cards .card .title p , .search-employee .cards .card .title p{
+  font-size: 8px;
+  color: #938C8C;
+  margin: 0;
+}  
+.search-job .cards .card  p , .search-employee .cards .card  p{
+  font-size: 16px;
+  color: #000;
+  margin: 18px 0px;
+  font-weight: 500;
+  text-align: start;
+} 
+.search-job .cards .card .content {
+  margin: 32px 0px 22px 0px;
+} 
+.search-employee .cards .card .content {
+  margin: 32px 0px 22px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+} 
+.search-employee .cards .card .content p{
+  font-size: 12px;
+  color: #000;
+  display: inline;
+  width: 49%;
+  margin: 6px 0px;
+
+} 
+.search-job .cards .card .content p{
+  font-size: 12px;
+  color: #000;
+} 
+.search-job .cards .card .content p span,
+.search-employee .cards .card .content p span{
+  color: #938C8C;
+} 
+.search-job .cards .card .state ,.search-job .cards .card .state .time{
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  gap: 6px;
+} 
+.search-job .cards .card .state p{
+  font-size: 8px;
+  color: #938C8C;
+  margin: 0px;
+
+} 
+.search-job .cards .card .state .active p{
+  font-size: 8px;
+  color: #71AA27;
+} 
+.search-job .cards .card .state .active p::before{
+  content: ""; 
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-right: 2px; /* adjust spacing as needed */  
+  background-color: #71AA27;
+}
+.search-job .cards .card .butt,
+.search-employee .cards .card .butt{
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.search-job .cards .card .butt a,
+.search-employee .cards .card .butt a{
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  background: #282828;
+  border-radius: 4px;
+  padding: 9px;
+  font-weight: 700;
+  font-size: 16px;
+}
+footer{
+  width: 100%;
+  background: #282828;
+  color: #FFFFFF;
+  margin-top: 25px;
+  padding: 32px 32px;
+}
+footer .content{
+  display: flex;
+  justify-content: center;
+  gap: 107px;
+}
+
+footer .content div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .content h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+footer .content p{
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+footer .copy hr {
+  width: 731px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+}
+
+.companies{
+  align-items: center;
+  margin: 120px auto;
+}
+.companies h1{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.companies .scroll-imgs  {
+  width: 100%;
+  margin: 32px 0px 64px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.companies .scroll-imgs .img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 1200px) and (min-width: 885px) {
+  nav{
+    padding: 15px 10px;
+  }
+  nav .elements .ele{
+    gap: 0px;
+  }
+  
+  nav .elements ul li{
+    margin-right: 20px;
+  }
+  nav .elements ul li i{
+    font-size: 16px;
+  }
+  nav .elements ul li a{
+    font-size: 14px;
+  }
+  .search-job .cards, .search-employee .cards{
+    gap: 30px;
+    flex-wrap: wrap;
+  } 
+
+  footer .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+
+} 
+@media screen and (max-width: 884px) and (min-width: 670px) {
+  nav{
+    padding: 15px 32px;
+  }
+  nav .menu{
+  display: inherit;
+  }
+
+  nav .elements{
+    padding: 30px 10%;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 40%;
+    z-index: 3;
+    align-items: start;
+    gap: 20px;
+    border: 1px solid #0000004f;
+    border-top: 0px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    
+  }
+  nav .elements .ele{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  
+  nav .elements ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  nav .elements .lang {
+    display: block;
+    text-align: start;
+  }
+  .search-job .cards, .search-employee .cards{
+    gap: 30px;
+    flex-wrap: wrap;
+  }  
+  footer .content{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .box {
+    margin-top: 48px;
+    position: absolute;
+    top: -70px;
+    left: -210px;
+    z-index: 4;
+    display: none;
+    width: 180px;
+  }
+  .box .mark{
+    position: absolute;
+    top: 20px;
+    left: 175px;
+    width: 0;
+    transform: rotate(90deg);
+  }
+  .box ul {
+    padding: 10px 20px;
+  }
+
+}
+@media screen and (max-width: 669px) and (min-width: 430px) {
+  nav{
+    padding: 15px 32px;
+  }
+  nav .menu{
+  display: inherit;
+  }
+
+  nav .elements{
+    padding: 30px 10%;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 40%;
+    z-index: 3;
+    align-items: start;
+    gap: 20px;
+    border: 1px solid #0000004f;
+    border-top: 0px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+    
+  }
+  nav .elements .ele{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  
+  nav .elements ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  nav .elements .lang {
+    display: block;
+    text-align: start;
+  }
+  .search-job .cards, .search-employee .cards{
+    gap: 30px;
+    flex-wrap: wrap;
+  }  
+  .search-job .categories ul, .search-employee .categories ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px;
+    position: relative;
+  
+  }  
+  footer .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .search-job .search-container , .search-employee .search-container{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+  }
+  .box {
+    margin-top: 48px;
+    position: absolute;
+    top: -70px;
+    left: -210px;
+    z-index: 4;
+    display: none;
+    width: 180px;
+  }
+  .box .mark{
+    position: absolute;
+    top: 20px;
+    left: 175px;
+    width: 0;
+    transform: rotate(90deg);
+  }
+  .box ul {
+    padding: 10px 20px;
+  }
+  .companies .scroll-imgs  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 430px) and (min-width: 300px) {
+  nav{
+    padding: 15px 32px;
+  }
+  nav .menu{
+  display: inherit;
+  }
+
+  nav .elements{
+    padding: 30px 10%;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 40%;
+    z-index: 3;
+    align-items: start;
+    gap: 20px;
+    border: 1px solid #0000004f;
+    border-top: 0px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+    
+  }
+  nav .elements .ele{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  
+  nav .elements ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  nav .elements .lang {
+    display: block;
+    text-align: start;
+  }
+  .search-job .cards, .search-employee .cards{
+    gap: 30px;
+    flex-wrap: wrap;
+  }  
+  .search-job .categories ul, .search-employee .categories ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px;
+    position: relative;
+  
+  }  
+  footer .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .search-job .search-container , .search-employee .search-container{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+  }
+  .search-job .search-container input , .search-employee .search-container input{
+    width: 50%;
+  }
+  .box {
+    margin-top: 48px;
+    position: absolute;
+    top: -70px;
+    left: -210px;
+    z-index: 4;
+    width: 180px;
+    display: none;
+  }
+  .box .mark{
+    position: absolute;
+    top: 20px;
+    left: 175px;
+    width: 0;
+    transform: rotate(90deg);
+  }
+  .box ul {
+    padding: 10px 20px;
+  }
+  .companies h1{
+    font-size: 20px;
+    padding: 0px 10px;
+    font-weight: 700;
+  }
+  .companies .scroll-imgs  {
+    display: flex;
+    flex-direction: column;
+  }
+  .companies .scroll-imgs .group  {
+    display:none;
+  }
+}

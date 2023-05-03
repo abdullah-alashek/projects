@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto:wght@100&family=Sofia&display=swap');
+
+.header{
+  background-image: url("../images/banner-bg.png");
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+}
+.container-fluid{
+  width: auto !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+.pages ul{
+  font-size: 20px;
+}
+.pages li {
+  padding-left: 0.5vw !important;
+}
+.pages li a:hover{
+  color: rgb(231, 173, 27) !important;
+}
+.icon .nav-item {
+  padding-left: 1.5rem;
+}
+.carousel-inner{
+  padding-bottom: 10px;
+}
+.navbar{
+  margin-bottom: 100px;
+}
+.bann{
+  padding: 0px 100px;
+  position: relative !important;
+}
+.bannee img{
+  width: 100%;
+}
+.bannee .text h1{
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.bannee .text p{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-control-prev{
+  width: 5vw !important;
+  height: 5vw !important;
+  border-radius: 50%;
+  position: absolute;  
+  top: 50% !important;
+  left: 10px !important;
+  font-size: 30px;
+  color: rgb(251, 251, 251) !important;
+}
+.carousel-control-next{
+  width: 5vw !important;
+  height: 5vw !important;
+  border-radius: 50%;
+  position: absolute;  
+  top: 50% !important;
+  right: 10px !important;
+  font-size: 30px;
+  color: rgb(251, 251, 251) !important;
+}
+.bannee .button{
+  margin-top: 50px;
+}
+.bannee .button a{
+  margin-top: 30px !important;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+}
+.bannee .button a:hover{
+  background-color: #fcce2d;
+  color: black;
+}
+.bannee .button .about{
+  background-color: #fcce2d;
+  color: black;
+}
+.our_courses{
+  width: 90%;
+  margin: 75px auto;
+}
+.our_courses h1{
+  text-align: center;
+  margin-bottom: 75px;
+  position: relative;
+  font-size: 50px;
+}
+.our_courses h1 span{
+  color: #fcce2d;
+}
+.our_courses h1::after{
+  content: "";
+  width: 60px;
+  height: 20px;
+  background-color: #fcce2d;
+  position: absolute;
+  top: 65px;
+  left: 48%;
+  border-radius: 20px;
+}
+
+.our_courses .row{
+  margin-bottom: 40px;
+}
+.our_courses .row .col-6 ,.our_about .row .col-6 ,.our_blog .row .col-6{
+  padding: 0 20px;
+}
+.our_courses .row .col-6 img , .our_about .row .col-6 img , .our_blog .row .col-6 img{
+  width: 100%;
+  background-size: cover;
+}
+.our_about , .our_blog{
+  width: 90%;
+  margin: 75px auto;
+}
+.our_about .title , .our_blog .title{
+  text-align: center;
+  margin: 100px 0;
+  position: relative;
+}
+.our_about h1 , .our_blog h1{
+  font-size: 50px;
+}
+.our_about .title p , .our_blog .title p{
+  margin: 30px 0;
+  font-size: 24px;
+}
+.our_about .para{
+  border: 3px solid #666666;
+  padding: 40px !important;
+}
+
+.our_about .para p{
+  font-size: 24px;
+  width: 95%;
+  color: #666666;
+}
+.our_about .para .post{
+  font-size: 23px;
+  width: 95%;
+  color: #666666c4;
+}
+.our_about .photo{
+  position: relative;
+}
+.our_about .photo span{
+  text-align: center;
+  background-color: #fcce2d;
+  font-size: 40px;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: -10px;
+}
+.our_blog .row{
+  border: 3px solid #666666;
+  padding: 20px 10px;
+}
+.our_blog .para h2{
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.our_blog .para p{
+  margin-top: 10px;
+  font-size: 22px;
+}
+/* .footer{
+  background-color: black;
+  padding: 100px 0px;
+}
+.footer .like{
+  text-align: center;
+  margin-bottom: 75px;
+}
+.footer .like a{
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  background-color: #fcce2d;
+  padding: 15px 150px;
+  border-radius: 40px;
+}
+.footer .like input{
+  color: black;
+  font-size: 26px;
+  padding: 12px 300px 15px 30px;
+  border-radius: 40px; */
+
+/* footer section start */
+
+.footer_section {
+  width: 100%;
+  float: left;
+  background-color: #202020;
+  height: auto;
+  padding-bottom: 90px;
+}
+
+.mail_section {
+  width: 100%;
+  float: left;
+}
+
+.email_text {
+  width: 65%;
+  float: right;
+  font-size: 18px;
+  color: #363636;
+  background-color: #ffffff !important;
+  border: 0px;
+  padding: 16px 20px 10px 30px;
+  height: auto;
+  border-radius: 40px;
+}
+
+
+.subscribe_bt {
+  width: 350px;
+  float: left;
+}
+
+.subscribe_bt a {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  color: #151515;
+  text-align: center;
+  background-color: #fcce2d;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+.subscribe_bt a:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+
+
+.margin_top{
+  margin-top: 90px;
+}
+
+.call_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.call_text a {
+  color: #ffffff;
+}
+.call_text a:hover {
+  color: #fcce2d;
+}
+
+
+.footer_section_2 {
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+}
+
+.footer_logo {
+  width: 100%;
+  float: left;
+  padding: 134px 0px;
+}
+
+.footer_menu {
+  width: 100%;
+  float: left;
+}
+
+.footer_menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer_menu li {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 12px 0px;
+}
+
+.footer_menu li a{
+  color: #ffffff;
+}
+.footer_menu li a:hover{
+  color: #fcce2d;
+}
+
+.information_text {
+  width: 100%;
+  float: left;
+  font-size: 24px;
+  color: #fff;
+}
+
+.many_text {
+  width: 87%;
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 0px;
+  line-height: 40px;
+  margin-top: 0px;
+}
+
+.information_main {
+  width: 100%;
+  float: left;
+  border-left: 1px solid #ffffff;
+  padding-left: 50px;
+}
+/* footer section end */
+
+
+.copyright_section {
+  width: 100%;
+  float: left;
+  background-color: #f7f6f6;
+  height: auto;
+}
+
+.copyright_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  margin-left: 0px;
+  color: #131313;
+  text-align: center;
+}
+
+.copyright_text a {
+  color: #131313;
+}
+
+.copyright_text a:hover {
+  color: #fcce2d;
+}
+
+.margin_top_90 {
+  margin-top: 90px;
+}
